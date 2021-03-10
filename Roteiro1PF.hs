@@ -2,18 +2,6 @@ main :: IO ()
 
 main = print("Available functions: double, quadruple, hypotenuse, distance")
 
-double::Float->Float
-double x = x * 2
-
-quadruple::Float->Float
-quadruple x = double(double x)
-
-hypotenuse::Float->Float->Float
-hypotenuse a b = sqrt((a * a) + (b * b))
-
-distance::(Float, Float)->(Float, Float)->Float
-distance (x1,y1) (x2,y2) = sqrt((x2 - x1)^2 + (y2 - y1)^2)
-
 e1 = 1 + 2 * 3 => 7
 e2 = 5 ^ 3 => 125
 e3 = 5 ** 3 => 125.0
@@ -34,3 +22,16 @@ e17 = sin (pi/2) => 1.0
 e18 = sum [1..5] => 15
 e19 = not True => False
 e20 = True && False => False 
+
+double::Float->Float
+double x = x * 2
+
+quadruple::Float->Float
+quadruple x = double(double x)
+
+hypotenuse::Float->Float->Float
+hypotenuse a b = sqrt((a * a) + (b * b))
+
+distance::(Float, Float)->(Float, Float)->Float
+distance (x1,y1) (x2,y2) = sqrt((x2 - x1)^2 + (y2 - y1)^2)
+
